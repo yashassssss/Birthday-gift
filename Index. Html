@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 18th Winnieee 💖</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- PASSWORD SCREEN -->
+
+<div id="lockScreen" class="lock-screen">
+
+<h1>🎀 Secret Birthday Surprise 🎀</h1>
+
+<p>Only Winnieee can enter 💖</p>
+
+<input type="password" id="passwordInput" placeholder="Enter Password">
+
+<button onclick="checkPassword()">Unlock ✨</button>
+
+<p id="wrongPassword"></p>
+
+</div>
+
+<!-- MAIN WEBSITE -->
+
+<div id="mainSite" style="display:none;">
+
+<!-- MUSIC -->
+
+<audio id="music" loop>
+<source src="song.mp3" type="audio/mp3">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">
+🎵 Music
+</button>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1 class="title">
+Happy 18th Birthday Winnieee 🎂💖
+</h1>
+
+<p class="typing"></p>
+
+<!-- COUNTDOWN -->
+
+<div class="countdown">
+
+<div>
+<span id="days">00</span>
+<p>Days</p>
+</div>
+
+<div>
+<span id="hours">00</span>
+<p>Hours</p>
+</div>
+
+<div>
+<span id="minutes">00</span>
+<p>Minutes</p>
+</div>
+
+<div>
+<span id="seconds">00</span>
+<p>Seconds</p>
+</div>
+
+</div>
+
+<button class="main-btn" onclick="showLetter()">
+Open Surprise 💌
+</button>
+
+</section>
+
+<!-- LETTER -->
+
+<section id="letter" class="letter hidden">
+
+<h2>To My Favorite Human 💞</h2>
+
+<p>
+You genuinely became one of the most beautiful parts of my life.
+
+Thank you for every laugh, every game, every comfort,
+every memory and every moment.
+
+I hope your 18th year becomes magical because
+you deserve the prettiest happiness in the world 💖
+</p>
+
+</section>
+
+<!-- CAKE -->
+
+<section class="cake-section">
+
+<h2>Make A Wish 🎂</h2>
+
+<div class="cake">
+
+<div class="candle">
+<div class="flame"></div>
+</div>
+
+</div>
+
+<button class="blow-btn" onclick="blowCandle()">
+Blow Candle 🕯️
+</button>
+
+</section>
+
+<!-- MEMORIES -->
+
+<section class="gallery">
+
+<h2>Our Memories 📸</h2>
+
+<div class="photos">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+
+</div>
+
+</section>
+
+<!-- REASONS -->
+
+<section class="reasons">
+
+<h2>18 Reasons Why You're Special ✨</h2>
+
+<div class="cards">
+
+<div class="card">You're literally sunshine</div>
+<div class="card">Your smile heals everything</div>
+<div class="card">You stayed when nobody else did</div>
+<div class="card">You're my comfort person</div>
+<div class="card">You're effortlessly beautiful</div>
+<div class="card">You're genuinely precious</div>
+<div class="card">You make life feel lighter</div>
+<div class="card">You're unforgettable</div>
+
+</div>
+
+</section>
+
+<!-- MINI GAME -->
+
+<section class="game-section">
+
+<h2>Mini Bestie Game 🎮</h2>
+
+<p>
+Catch the hearts Winnieee 💖
+</p>
+
+<div class="game-area">
+
+<div id="heart">💖</div>
+
+</div>
+
+<p class="score-text">
+Score:
+<span id="score">0</span>
+</p>
+
+</section>
+
+
+<!-- FINAL SECRET -->
+
+<section class="final">
+
+<h2>One Last Thing... 🥹</h2>
+
+<button class="secret-btn" onclick="showFinalMessage()">
+Click For Final Surprise 💌
+</button>
+
+<div id="finalMessage" class="hidden final-message">
+
+<p>
+Happy 18th birthday to the prettiest soul ever.
+
+Thank you for becoming such an important part of my life.
+Thank you for every laugh, every comfort, every memory,
+every game, every late-night talk and every tiny moment.
+
+You genuinely made life softer and happier for me.
+
+No matter where life takes us,
+you'll always be one of my favorite people ever.
+
+I hope this year brings you endless happiness,
+beautiful memories, success, peace,
+and everything your heart deserves.
+
+You'll always mean a lot to me Winnieee 💖
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
